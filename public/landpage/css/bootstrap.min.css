@@ -6853,6 +6853,9 @@ fieldset:disabled .btn {
 .bg-dark {
     background-color: #0e2e50 !important;
 }
+.bg-pooter {
+    background-color: #00B98E !important;
+}
 .bg-body {
     background-color: #effdf5 !important;
 }
@@ -6865,6 +6868,12 @@ fieldset:disabled .btn {
 .bg-gradient {
     background-image: var(--bs-gradient) !important;
 }
+
+/* Add this CSS to set the color of the text */
+.black-text {
+    color: black;
+}
+
 .user-select-all {
     user-select: all !important;
 }
