@@ -155,36 +155,40 @@
         </div>
         <!-- Category End -->
 
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                            <img class="img-fluid w-100" src="{{ asset('landpage/img/about.jpg') }}">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="display-5 animated fadeIn mb-4">Bencatala <span class="text-primary">Playmat</span></h1>
-                        <p class="mb-4 nengah">
-                            Bencatala Playmat menyajikan inovasi produk dengan prinsip bermain
-                            sambil belajar melalui video, gambar, dan audio tentang mitigasi bencana serta
-                            cara-cara merawat alam sekitar. Produk ini sangat diperlukan untuk menambah
-                            pengetahuan baru bagi anak usia dini. Teknologi serta desain yang menarik menjadi
-                            daya dukung dalam pembuatan produk.
-                        </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Virtual Reality</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
-                        <a href="" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
-                            class="fa fa-chevron-right nengah"></i>
-                    </a>
-                    </div>
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="">
+                    <video class="video-fluid w-100" autoplay loop muted>
+                        <source src="{{ asset('landpage/img/ngasalae.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="display-5 animated fadeIn mb-4">Bencatala <span class="text-primary">Playmat</span></h1>
+                <p class="mb-4 nengah">
+                    Bencatala Playmat menyajikan inovasi produk dengan prinsip bermain
+                    sambil belajar melalui video, gambar, dan audio tentang mitigasi bencana serta
+                    cara-cara merawat alam sekitar. Produk ini sangat diperlukan untuk menambah
+                    pengetahuan baru bagi anak usia dini. Teknologi serta desain yang menarik menjadi
+                    daya dukung dalam pembuatan produk.
+                </p>
+                <p><i class="fa fa-check text-primary me-3"></i>Virtual Reality</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
+                <a href="" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
+                    class="fa fa-chevron-right nengah"></i>
+                </a>
+            </div>
         </div>
-        <!-- About End -->
+    </div>
+</div>
+<!-- About End -->
+
 {{--
         <!-- Property List Start -->
         <div class="container-xxl py-5">
@@ -744,36 +748,39 @@
         <!-- Property List End --> --}}
 
 
-        <!-- Call to Action Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="bg-light rounded p-3">
-                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <img class="img-fluid rounded w-100"
-                                    src="{{ asset('landpage/img/call-to-action.jpg') }}" alt="">
-                            </div>
-                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="mb-4">
-                                    <h1 class="display-5 animated fadeIn mb-3">Kualitas Terbaik</h1>
-                                    <p class="nengah">
-                                    Bencatala Playmat menggunakan bahan-bahan yang aman dan nyaman untuk anak-anak. Kain lembut
-                                    dan halus serta tahan air adalah beberapa keunggulan produk ini. Bencatala Playmat menyajikan inovasi produk dengan prinsip bermain
-                                    sambil belajar melalui video, gambar, dan audio tentang mitigasi bencana serta
-                                    cara-cara merawat alam sekitar.
-                                    </p>
-                                </div>
-                                <a href="" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
-                                        class="fa fa-chevron-right nengah"></i>
-                                </a>
-                            </div>
+<!-- Call to Action Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="bg-light rounded p-3">
+            <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <video class="video-fluid rounded w-100" autoplay loop muted>
+                            <source src="{{ asset('landpage/img/ngasal.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="mb-4">
+                            <h1 class="display-5 animated fadeIn mb-3">Kualitas Terbaik</h1>
+                            <p class="nengah">
+                                Bencatala Playmat menggunakan bahan-bahan yang aman dan nyaman untuk anak-anak. Kain lembut
+                                dan halus serta tahan air adalah beberapa keunggulan produk ini. Bencatala Playmat menyajikan inovasi produk dengan prinsip bermain
+                                sambil belajar melalui video, gambar, dan audio tentang mitigasi bencana serta
+                                cara-cara merawat alam sekitar.
+                            </p>
                         </div>
+                        <a href="" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
+                                class="fa fa-chevron-right nengah"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Call to Action End -->
+    </div>
+</div>
+<!-- Call to Action End -->
+
 {{--
 
         <!-- Team Start -->
@@ -874,51 +881,75 @@
                     <h1 class="mb-3">Fitur</h1>
                     <p>
                         Bencatala Playmat juga dilengkapi segudang fitur yang dapat membuat anak merasa nyaman dan aman
-                        yang dapat menunjang kreativitasnya.
+                        serta dapat menunjang kreativitasnya.
                     </p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet
-                                diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="bg-white border rounded p-4 nengah">
+                            <p>
+                                Virtual Reality (VR) merupakan teknologi yang memungkinkan
+                                untuk berinteraksi dengan objek imajinasi melalui perangkat elektronik dan seolah-olah
+                                merasakan secara langsung.
+                            </p>
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded"
-                                    src="{{ asset('landpage/img/testimonial-1.jpg') }}"
+                                    src="{{ asset('landpage/img/ar.png') }}"
                                     style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
+                                    <h6 class="fw-bold mb-1">Virtual Reality</h6>
+                                    <small>Fitur</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet
-                                diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="bg-white border rounded p-4 nengah">
+                            <p>Anak-anak pada umumnya menyukai sesuatu yang sangat menarik. Bencatala playmat
+                                memberikan Video edukasi berisikan
+                                tentang cara mitigasi bencana diiringi dengan animasi.
+                            </p>
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded"
-                                    src="{{ asset('landpage/img/testimonial-2.jpg') }}"
+                                    src="{{ asset('landpage/img/edukasi.jpg') }}"
                                     style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
+                                    <h6 class="fw-bold mb-1">Video Edukasi</h6>
+                                    <small>Fitur</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet
-                                diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <div class="bg-white border rounded p-4 nengah">
+                            <p>
+                                Gaya belajar tentunya mempengaruhi nilai akademis anak. Fitur auditori ini memudahkan anak
+                                dalam belajar memperhatikan materi pembelajaran secara asik dan menyenangkan.
+                            </p>
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded"
-                                    src="{{ asset('landpage/img/testimonial-3.jpg') }}"
+                                    src="{{ asset('landpage/img/audi.jpeg') }}"
                                     style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
+                                    <h6 class="fw-bold mb-1">Auditori</h6>
+                                    <small>Fitur</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4 nengah">
+                            <p>
+                                Sebagai permulaan ketika ingin mememasuki dunia Virtual Reality (VR), pengguna diminta untuk
+                                men-scan barcode yang telah tersedia dibuku panduan  ataupun di web Bencatala Playmat.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded"
+                                    src="{{ asset('landpage/img/scanqr.png') }}"
+                                    style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">QR Code</h6>
+                                    <small>Fitur</small>
                                 </div>
                             </div>
                         </div>
