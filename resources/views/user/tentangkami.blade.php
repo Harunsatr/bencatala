@@ -49,7 +49,7 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
-                    <a href="" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
+                    <a href="{{ route('tentangkami') }}" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
                             class="fa fa-chevron-right nengah"></i>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="row g-4 above">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gempa Bumi.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -79,7 +79,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Kekeringan.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -88,7 +88,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gunung Meletus.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -97,7 +97,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tsunami.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -106,7 +106,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Banjir.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -115,7 +115,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tanah Longsor.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -209,102 +209,111 @@
     </div>
     <!-- Testimonial End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">Hubungi Kami</h1>
-                <p>
-                    Layanan ini tersedia setiap saat ketika anda ingin mempertanyakan produk kami lebih lanjut.
-                    Produk kami merupakan barang original dari karya kami.
-                </p>
-            </div>
-            <div class="row g-4">
-                <div class="col-12">
-                        <div class="col-12">
-                            <div class="row gy-4">
-                                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                                    <div class="bg-light rounded p-3">
-                                        <div class="anjir align-items-center bg-white rounded p-3" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
-                                            <span class="nengah">Jl. Semarang 5, Malang, Jawa Timur</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="bg-light rounded p-3">
-                                        <div class="anjir align-items-center bg-white rounded p-3" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                                            <i class="fas fa-envelope me-2 text-primary"></i>
-                                            <span class="nengah">bencatala.official@gmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="bg-light rounded p-3">
-                                        <div class="anjir align-items-center bg-white rounded p-3" style="border: 1px dashed rgba(0, 185, 142, .3)">
-                                            <i class="fas fa-phone me-2 text-primary"></i>
-                                            <span class="nengah">(+62) 895341020714</span>
-                                        </div>
-                                    </div>
-                                </div>
+<!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Hubungi Kami</h1>
+            <p>
+                Layanan ini tersedia setiap saat ketika Anda ingin mempertanyakan produk kami lebih lanjut.
+                Produk kami merupakan barang original dari karya kami.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="row gy-4">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-light rounded p-3">
+                            <div class="anjay align-items-center bg-white rounded p-3"
+                                style="border: 1px dashed rgba(0, 185, 142, .3)">
+                                <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                                <span class="nengah">Jl. Semarang 5, Malang, Jawa Timur</span>
                             </div>
                         </div>
                     </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.713144607958!2d112.61040189638483!3d-7.954615046234704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788281bdd08839%3A0xc915f268bffa831f!2sUniversitas%20Negeri%20Malang!5e0!3m2!1sen!2sid!4v1694491446200!5m2!1sen!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="bg-light rounded p-3">
+                            <div class="anjay align-items-center bg-white rounded p-3"
+                                style="border: 1px dashed rgba(0, 185, 142, .3)">
+                                <i class="fas fa-envelope me-2 text-primary"></i>
+                                <span class="nengah">bencatala.official@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="bg-light rounded p-3">
+                            <div class="anjay align-items-center bg-white rounded p-3"
+                                style="border: 1px dashed rgba(0, 185, 142, .3)">
+                                <i class="fas fa-phone me-2 text-primary"></i>
+                                <span class="nengah">(+62) 895341020714</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="wow fadeInUp" data-wow-delay="0.5s">
-                        <p class="mb-4 nengah">
-                            Bencatala Playmat dapat menjadi solusi mengenali bencana dan cara mitigasi yang tepat untuk anak usia dini.
-                            Wujudkan kreativitas dan kecerdasan anak dalam pengetahuan berbasis teknologi.
-                            <a href="">Pesan sekarang</a>.</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name"
-                                            placeholder="Your Name">
-                                        <label for="name">Nama</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="Your Email">
-                                        <label for="email">E-mail</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Umur</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                        <label for="message">Kritik dan saran</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Kirim</button>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.713144607958!2d112.61040189638483!3d-7.954615046234704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788281bdd08839%3A0xc915f268bffa831f!2sUniversitas%20Negeri%20Malang!5e0!3m2!1sen!2sid!4v1694491446200!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4 nengah">
+                        Bencatala Playmat dapat menjadi solusi mengenali bencana dan cara mitigasi yang tepat untuk anak
+                        usia dini.
+                        Wujudkan kreativitas dan kecerdasan anak dalam pengetahuan berbasis teknologi.
+                        <a href="#">Pesan sekarang.</a>
+                    </p>
+                    <form method="POST" action="{{ route('send.message') }}">
+                        @csrf
+                        <!-- Form fields here -->
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Your Name">
+                                    <label for="name">Nama</label>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email">
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="umur" id="subject"
+                                        placeholder="Subject">
+                                    <label for="subject">Umur</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message"
+                                        style="height: 150px"></textarea>
+                                    <label for="message">Kritik dan saran</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit"
+                                    name="submit">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+</div>
+<!-- Contact End -->
+
 
     {{-- Script --}}
     <style>
-        .anjir{
+        .anjay {
             justify-content: center;
             /* Mengatur teks di tengah secara horizontal */
             align-items: center;

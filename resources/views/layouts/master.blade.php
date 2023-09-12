@@ -93,19 +93,19 @@
         <div id="social-float">
 
             <div class="insta-float">
-                <a href="" target="_blank">
+                <a href="https://www.instagram.com/bencatala.official/" target="_blank">
                     <i class="fab fa-instagram"></i><span><small>Instagram</small></span>
                 </a>
             </div>
 
             <div class="coba-float">
-                <a href="" target="_blank">
+                <a href="https://wa.me/62895341020714" target="_blank">
                     <i class="fab fa-whatsapp"></i><span><small>WhatsApp</small></span>
                 </a>
             </div>
 
             <div class="njajal-float">
-                <a href="" target="_blank">
+                <a href="https://www.tiktok.com/@bencatala.official?_t=8fd3cyrca7b&_r=1" target="_blank">
                     <i class="fab fa-tiktok"></i><span><small>TikTok</small></span>
                 </a>
             </div>
