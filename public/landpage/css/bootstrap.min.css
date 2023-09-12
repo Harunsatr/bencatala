@@ -2552,6 +2552,8 @@ fieldset:disabled .btn {
     color: #000;
     background-color: #00b98e;
     border-color: #00b98e;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .btn-primary:hover {
     color: #000;
@@ -3728,6 +3730,12 @@ fieldset:disabled .btn {
     outline: 0;
     box-shadow: 0 0 0 0.25rem;
 }
+
+.logo {
+    display: inline-block; /* Mengubah ikon menjadi elemen inline-block */
+    vertical-align: middle; /* Mengatur vertikal alignment ke tengah */
+}
+
 .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;

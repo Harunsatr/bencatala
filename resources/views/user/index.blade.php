@@ -23,14 +23,14 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://via.placeholder.com/1000x1000" class="d-block w-100" alt="Slide 1">
+                                <img src="{{ asset('landpage/img/2.png') }}" class="d-block w-100" alt="Slide 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://via.placeholder.com/1000x1000" class="d-block w-100"
+                                <img src="{{ asset('landpage/img/3.png') }}" class="d-block w-100"
                                     alt="Slide 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://via.placeholder.com/1000x1000" class="d-block w-100"
+                                <img src="{{ asset('landpage/img/1.png') }}" class="d-block w-100"
                                     alt="Slide 3">
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                     pengetahuan baru bagi anak usia dini. Teknologi serta desain yang menarik menjadi
                     daya dukung dalam pembuatan produk.
                 </p>
-                <p><i class="fa fa-check text-primary me-3"></i>Virtual Reality</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Augmented Reality</p>
                 <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
                 <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
                 <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
@@ -888,16 +888,16 @@
                     <div class="testimonial-item bg-light rounded p-3">
                         <div class="bg-white border rounded p-4 nengah">
                             <p>
-                                Virtual Reality (VR) merupakan teknologi yang memungkinkan
+                                Augmented Reality (AR) merupakan teknologi yang memungkinkan
                                 untuk berinteraksi dengan objek imajinasi melalui perangkat elektronik dan seolah-olah
-                                merasakan secara langsung.
+                                merasakan secara langsung (3D).
                             </p>
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded"
                                     src="{{ asset('landpage/img/ar.png') }}"
                                     style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Virtual Reality</h6>
+                                    <h6 class="fw-bold mb-1">Augmented Reality</h6>
                                     <small>Fitur</small>
                                 </div>
                             </div>
@@ -940,7 +940,7 @@
                     <div class="testimonial-item bg-light rounded p-3">
                         <div class="bg-white border rounded p-4 nengah">
                             <p>
-                                Sebagai permulaan ketika ingin mememasuki dunia Virtual Reality (VR), pengguna diminta untuk
+                                Sebagai permulaan ketika ingin mememasuki dunia Augmented Reality (AR), pengguna diminta untuk
                                 men-scan barcode yang telah tersedia dibuku panduan  ataupun di web Bencatala Playmat.
                             </p>
                             <div class="d-flex align-items-center">

@@ -34,10 +34,6 @@ class HomeController extends Controller
     {
         return view('user.belanjasekarang');
     }
-    public function hubungi()
-    {
-        return view('user.hubungi');
-    }
     public function produk()
     {
         return view('user.produk');

@@ -53,16 +53,12 @@
             </div>
         </div>
         <!-- Spinner End -->
-
         <!-- Navbar Start -->
         <div class="container-fluid nav-bar bg-transparent">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    {{-- <div class="icon p-2 me-2"> --}} &nbsp; &nbsp; &nbsp;
                     <img class="img-fluid" src="{{ asset('landpage/img/bencatala_logo.png') }}" alt="Icon"
                         style="width: 80px; height: 80px;">
-                    {{-- </div> --}}
-                    {{-- <h1 class="m-0 text-primary">Bencatala</h1> --}}
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -70,31 +66,61 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="{{ route('home') }}" class="nav-item nav-link active">Beranda</a>
-                        <a href="{{ route('tentangkami') }}" class="nav-item nav-link">Tentang Kami </a>
+                        <a href="{{ route('home') }}" class="nav-item nav-link" id="beranda">Beranda</a>
+                        <a href="{{ route('tentangkami') }}" class="nav-item nav-link" id="tentangkami">Tentang Kami</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                id="produkMenu">Produk</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{{ route('infoproduk') }}" class="dropdown-item">Info produk</a>
-                                <a href="{{ route('belanjasekarang') }}" class="dropdown-item">Belanja sekarang</a>
+                                <a href="{{ route('infoproduk') }}" class="dropdown-item" id="infoproduk">Info
+                                    produk</a>
+                                <a href="{{ route('belanjasekarang') }}" class="dropdown-item"
+                                    id="belanjasekarang">Belanja sekarang</a>
                             </div>
                         </div>
-                        <a href="{{ route('hubungi') }}" class="nav-item nav-link">Hubungi</a>
+                        <a href="{{ route('vr') }}" class="nav-item nav-link" id="virtualreality">Augmented Reality</a>
                     </div>
-                    <a href="{{ route('vr') }}" class="btn btn-primary px-3 d-none d-lg-flex">Virtual Reality</a>
                 </div>
             </nav>
         </div>
         <!-- Navbar End -->
 
+
         @yield('content')
+
+        {{-- Icon Start --}}
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        <div id="social-float">
+
+            <div class="insta-float">
+                <a href="" target="_blank">
+                    <i class="fab fa-instagram"></i><span><small>Instagram</small></span>
+                </a>
+            </div>
+
+            <div class="coba-float">
+                <a href="" target="_blank">
+                    <i class="fab fa-whatsapp"></i><span><small>WhatsApp</small></span>
+                </a>
+            </div>
+
+            <div class="njajal-float">
+                <a href="" target="_blank">
+                    <i class="fab fa-tiktok"></i><span><small>TikTok</small></span>
+                </a>
+            </div>
+
+        </div>
+        {{-- Icon End --}}
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-pooter footer pt-3 mt-3 wow fadeIn" data-wow-delay="0.1s">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="footer-text"> &copy; <span class="black-text">2023 Bencatala Playmat</span> </p>
+                        <p class="footer-text"> &copy; <span class="black-text">2023 Bencatala Playmat</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,10 +155,194 @@
             });
         });
     </script>
+
+    <script>
+        $(document).ready(function() {
+            // Fungsi untuk mengatur menu yang aktif berdasarkan URL
+            function setActiveMenu() {
+                var path = window.location.pathname;
+
+                // Hapus kelas 'active' dari semua menu
+                $('.nav-item.nav-link').removeClass('active');
+
+                // Tambahkan kelas 'active' ke menu yang sesuai dengan URL saat ini
+                if (path === '/') {
+                    $('#beranda').addClass('active');
+                } else if (path === '/tentangkami') {
+                    $('#tentangkami').addClass('active');
+                } else if (path === '/infoproduk' || path === '/belanjasekarang') {
+                    // Set menu "Produk" menjadi aktif jika submenu "Info produk" atau "Belanja sekarang" dipilih
+                    $('#produkMenu').addClass('active');
+                } else if (path === '/hubungi') {
+                    $('#hubungi').addClass('active');
+                } else if (path === '/vr') {
+                    $('#virtualreality').addClass('active');
+                }
+                // Tambahkan kode ini untuk setiap menu lainnya
+            }
+
+            // Panggil fungsi saat halaman dimuat
+            setActiveMenu();
+        });
+    </script>
+
+    {{-- Icon --}}
+    <style>
+
+        #social-float {
+            position: fixed;
+            padding: 24px 10px;
+            bottom: 60%;
+        }
+
+        .coba-float {
+            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
+            position: fixed;
+            transform: translate(135px, 0px);
+            width: 180px;
+            right: 0;
+            overflow: hidden;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 2px 0 0 2px;
+            z-index: 10;
+            transition: all 0.5s ease-in-out;
+            vertical-align: middle;
+        }
+
+        .coba-float a span {
+            color: white;
+            font-size: 18px;
+            font-family: "Lato", sans-serif;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            position: absolute;
+            line-height: 180%;
+            font-weight: bolder;
+        }
+
+        .coba-float i {
+            font-size: 30px;
+            color: white;
+            line-height: 30px;
+            padding: 10px 20px 10px 10px;
+            transform: rotate(0deg);
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+        }
+
+        .coba-float:hover {
+            color: #FFFFFF;
+            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
+            transform: translate(0px, 0px);
+        }
+
+        .coba-float:hover i {
+            transform: rotate(360deg);
+
+        }
+
+        .insta-float {
+            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
+
+            position: fixed;
+            transform: translate(135px, 60px);
+            width: 180px;
+            right: 0;
+            overflow: hidden;
+            background-color: #bf34ff;
+            color: #FFF;
+            border-radius: 2px 0 0 2px;
+            z-index: 10;
+            transition: all 0.5s ease-in-out;
+            vertical-align: middle;
+        }
+
+        .insta-float a span {
+            color: white;
+            font-size: 18px;
+            font-family: "Lato", sans-serif;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            position: absolute;
+            line-height: 180%;
+            font-weight: bolder;
+        }
+
+        .insta-float i {
+            font-size: 30px;
+            color: white;
+            line-height: 30px;
+            padding: 10px 20px 10px 10px;
+            transform: rotate(0deg);
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+        }
+
+        .insta-float:hover {
+            color: #FFFFFF;
+            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
+            transform: translate(0px, 60px);
+        }
+
+        .insta-float:hover i {
+            transform: rotate(360deg);
+        }
+
+
+        .njajal-float {
+            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
+            position: fixed;
+            transform: translate(135px, 0px);
+            width: 180px;
+            right: 0;
+            overflow: hidden;
+            background-color: #000000;
+            color: #FFF;
+            border-radius: 2px 0 0 2px;
+            z-index: 10;
+            transition: all 0.5s ease-in-out;
+            vertical-align: middle;
+            bottom: 40%
+        }
+
+        .njajal-float a span {
+            color: white;
+            font-size: 18px;
+            font-family: "Lato", sans-serif;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            position: absolute;
+            line-height: 180%;
+            font-weight: bolder;
+        }
+
+        .njajal-float i {
+            font-size: 30px;
+            color: white;
+            line-height: 30px;
+            padding: 10px 20px 10px 10px;
+            transform: rotate(0deg);
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+        }
+
+        .njajal-float:hover {
+            color: #FFFFFF;
+            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
+            transform: translate(0px, 0px);
+        }
+
+        .njajal-float:hover i {
+            transform: rotate(360deg);
+
+        }
+    </style>
+
     <style>
         .nengah {
-        text-align: justify;
-        vertical-align: middle;
+            text-align: justify;
+            vertical-align: middle;
         }
     </style>
     <style>
@@ -145,8 +355,10 @@
 
         .col-lg-3,
         .col-sm-6 {
-            flex-basis: calc(33.33% - 20px); /* 3 kolom dalam 1 baris dengan jarak 20px */
-            margin: 10px; /* Jarak antara kotak */
+            flex-basis: calc(33.33% - 20px);
+            /* 3 kolom dalam 1 baris dengan jarak 20px */
+            margin: 10px;
+            /* Jarak antara kotak */
             transition: transform 0.3s, opacity 0.3s;
         }
 
