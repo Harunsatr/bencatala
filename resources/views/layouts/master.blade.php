@@ -78,7 +78,8 @@
                                     id="belanjasekarang">Belanja sekarang</a>
                             </div>
                         </div>
-                        <a href="{{ route('vr') }}" class="nav-item nav-link" id="virtualreality">Augmented Reality</a>
+                        <a href="{{ route('vr') }}" class="nav-item nav-link" id="virtualreality"><i>Augmented
+                            Reality</i></a>
                     </div>
                 </div>
             </nav>
@@ -89,29 +90,36 @@
         @yield('content')
 
         {{-- Icon Start --}}
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-        <div id="social-float">
-
-            <div class="insta-float">
-                <a href="https://www.instagram.com/bencatala.official/" target="_blank">
-                    <i class="fab fa-instagram"></i><span><small>Instagram</small></span>
-                </a>
-            </div>
-
-            <div class="coba-float">
-                <a href="https://wa.me/62895341020714" target="_blank">
-                    <i class="fab fa-whatsapp"></i><span><small>WhatsApp</small></span>
-                </a>
-            </div>
-
-            <div class="njajal-float">
-                <a href="https://www.tiktok.com/@bencatala.official?_t=8fd3cyrca7b&_r=1" target="_blank">
-                    <i class="fab fa-tiktok"></i><span><small>TikTok</small></span>
-                </a>
-            </div>
-
+        {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        <div id="whatsapp-float" class="social-icon">
+            <a href="https://wa.me/62895341020714" target="_blank">
+                <i class="fab fa-whatsapp"></i><span><small>WhatsApp</small></span>
+            </a>
         </div>
+
+        <div id="instagram-float" class="social-icon">
+            <a href="https://www.instagram.com/bencatala.official/" target="_blank">
+                <i class="fab fa-instagram"></i><span><small>Instagram</small></span>
+            </a>
+        </div>
+
+        <div id="tiktok-float" class="social-icon">
+            <a href="https://www.tiktok.com/@bencatala.official?_t=8fd3cyrca7b&_r=1" target="_blank">
+                <i class="fab fa-tiktok"></i><span><small>TikTok</small></span>
+            </a>
+        </div> --}}
         {{-- Icon End --}}
+
+        <!-- Load font awesome icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+            <a href="#" class="twitter"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="google"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
 
 
         <!-- Footer Start -->
@@ -187,157 +195,160 @@
     </script>
 
     {{-- Icon --}}
+    {{-- <style>
+        /* Common styles for all icons */
+        .social-icon {
+            width: 60px; /* Adjust the width as needed */
+            height: 60px; /* Adjust the height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff; /* Common text color */
+            border-radius: 0; /* Make them rectangular */
+            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
+            z-index: 10;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            position: fixed;
+        }
+
+        .social-icon a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .social-icon i {
+            font-size: 24px; /* Adjust the font size as needed */
+            transform: rotate(0deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* WhatsApp icon */
+        #whatsapp-float {
+            background-color: #25d366; /* Box color */
+            bottom: 20%;
+            left: 0;
+        }
+
+        #whatsapp-float:hover {
+            background-color: #128C7E; /* Change background color on hover */
+            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
+            transform: translate(10px, 0px);
+        }
+
+        #whatsapp-float:hover i {
+            transform: rotate(360deg);
+        }
+
+        /* Instagram icon */
+        #instagram-float {
+            background-color: #bf34ff; /* Box color */
+            bottom: 30%;
+            left: 0;
+        }
+
+        #instagram-float:hover {
+            background-color: #8E0FC4; /* Change background color on hover */
+            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
+            transform: translate(10px, 0px);
+        }
+
+        #instagram-float:hover i {
+            transform: rotate(360deg);
+        }
+
+        /* TikTok icon */
+        #tiktok-float {
+            background-color: #000000; /* Box color */
+            bottom: 40%;
+            left: 0;
+        }
+
+        #tiktok-float:hover {
+            background-color: #050505; /* Change background color on hover */
+            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
+            transform: translate(10px, 0px);
+        }
+
+        #tiktok-float:hover i {
+            transform: rotate(360deg);
+        }
+
+        /* Media Query for Responsive Design */
+        @media screen and (max-width: 768px) {
+            .social-icon {
+                width: 50px; /* Adjust the width as needed for smaller screens */
+                height: 50px; /* Adjust the height as needed for smaller screens */
+            }
+
+            .social-icon i {
+                font-size: 20px; /* Adjust the font size as needed for smaller screens */
+            }
+
+            #whatsapp-float {
+                bottom: 10%;
+            }
+
+            #instagram-float {
+                bottom: 20%;
+            }
+
+            #tiktok-float {
+                bottom: 30%;
+            }
+        } --}}
+    {{-- </style> --}}
+
+    {{-- New start --}}
     <style>
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0; /* Pindahkan ikon bar ke kanan */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
-        #social-float {
-            position: fixed;
-            padding: 24px 10px;
-            bottom: 60%;
-        }
+/* Style the icon bar links */
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 29px;
+}
 
-        .coba-float {
-            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
-            position: fixed;
-            transform: translate(135px, 0px);
-            width: 180px;
-            right: 0;
-            overflow: hidden;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 2px 0 0 2px;
-            z-index: 10;
-            transition: all 0.5s ease-in-out;
-            vertical-align: middle;
-        }
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+    background-color: #fde41b;
+}
 
-        .coba-float a span {
-            color: white;
-            font-size: 18px;
-            font-family: "Lato", sans-serif;
-            padding-top: 8px;
-            padding-bottom: 10px;
-            position: absolute;
-            line-height: 180%;
-            font-weight: bolder;
-        }
+.twitter {
+    background: #25d366;
+    color: white;
+}
 
-        .coba-float i {
-            font-size: 30px;
-            color: white;
-            line-height: 30px;
-            padding: 10px 20px 10px 10px;
-            transform: rotate(0deg);
-            transition: all 0.5s ease-in-out;
-            text-align: center;
-        }
+.google {
+    background: #bf34ff;
+    color: white;
+}
 
-        .coba-float:hover {
-            color: #FFFFFF;
-            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
-            transform: translate(0px, 0px);
-        }
+.linkedin {
+    background: rgb(6, 6, 6);
+    color: white;
+}
 
-        .coba-float:hover i {
-            transform: rotate(360deg);
-
-        }
-
-        .insta-float {
-            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
-
-            position: fixed;
-            transform: translate(135px, 60px);
-            width: 180px;
-            right: 0;
-            overflow: hidden;
-            background-color: #bf34ff;
-            color: #FFF;
-            border-radius: 2px 0 0 2px;
-            z-index: 10;
-            transition: all 0.5s ease-in-out;
-            vertical-align: middle;
-        }
-
-        .insta-float a span {
-            color: white;
-            font-size: 18px;
-            font-family: "Lato", sans-serif;
-            padding-top: 8px;
-            padding-bottom: 10px;
-            position: absolute;
-            line-height: 180%;
-            font-weight: bolder;
-        }
-
-        .insta-float i {
-            font-size: 30px;
-            color: white;
-            line-height: 30px;
-            padding: 10px 20px 10px 10px;
-            transform: rotate(0deg);
-            transition: all 0.5s ease-in-out;
-            text-align: center;
-        }
-
-        .insta-float:hover {
-            color: #FFFFFF;
-            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
-            transform: translate(0px, 60px);
-        }
-
-        .insta-float:hover i {
-            transform: rotate(360deg);
-        }
-
-
-        .njajal-float {
-            box-shadow: -1px 0px 35px -7px rgba(158, 158, 158, 1);
-            position: fixed;
-            transform: translate(135px, 0px);
-            width: 180px;
-            right: 0;
-            overflow: hidden;
-            background-color: #000000;
-            color: #FFF;
-            border-radius: 2px 0 0 2px;
-            z-index: 10;
-            transition: all 0.5s ease-in-out;
-            vertical-align: middle;
-            bottom: 40%
-        }
-
-        .njajal-float a span {
-            color: white;
-            font-size: 18px;
-            font-family: "Lato", sans-serif;
-            padding-top: 8px;
-            padding-bottom: 10px;
-            position: absolute;
-            line-height: 180%;
-            font-weight: bolder;
-        }
-
-        .njajal-float i {
-            font-size: 30px;
-            color: white;
-            line-height: 30px;
-            padding: 10px 20px 10px 10px;
-            transform: rotate(0deg);
-            transition: all 0.5s ease-in-out;
-            text-align: center;
-        }
-
-        .njajal-float:hover {
-            color: #FFFFFF;
-            box-shadow: -1px 0px 35px -7px rgba(0, 0, 0, 1);
-            transform: translate(0px, 0px);
-        }
-
-        .njajal-float:hover i {
-            transform: rotate(360deg);
-
-        }
     </style>
+    {{-- New end --}}
 
     <style>
         .nengah {

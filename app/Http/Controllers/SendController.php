@@ -8,7 +8,7 @@ class SendController extends Controller
 {
     public function sendMessage(Request $request)
     {
-        $name = $request->nama;
+        $name = $request->name;
         $email = $request->email;
         $umur = $request->umur;
         $message = $request->message;

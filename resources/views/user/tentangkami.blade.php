@@ -37,15 +37,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-5 animated fadeIn mb-4">Bencatala <span class="text-primary">Playmat</span></h1>
+                    <h1 class="display-5 animated fadeIn mb-4">Bencatala <span class="text-primary"><i>Playmat</i></span></h1>
                     <p class="mb-4 nengah">
-                        Bencatala Playmat menyajikan inovasi produk dengan prinsip bermain
+                        Bencatala <i>Playmat</i> menyajikan inovasi produk dengan prinsip bermain
                         sambil belajar melalui video, gambar, dan audio tentang mitigasi bencana serta
                         cara-cara merawat alam sekitar. Produk ini sangat diperlukan untuk menambah
                         pengetahuan baru bagi anak usia dini. Teknologi serta desain yang menarik menjadi
                         daya dukung dalam pembuatan produk.
                     </p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Augmented Reality</p>
+                    <p><i class="fa fa-check text-primary me-3"></i><i>Augmented Reality</i></p>
                     <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
@@ -64,7 +64,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="mb-3 mt-5">Mitigasi Bencana</h1>
-                <p> Bencatala Playmat hadir dengan
+                <p> Bencatala <i>Playmat</i> hadir dengan
                     membawa 6 Bencana sebagai materi mitigasi bencana yang dipelajari.
                 </p>
             </div>
@@ -134,7 +134,7 @@
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="mb-3">Fitur</h1>
                 <p>
-                    Bencatala Playmat juga dilengkapi segudang fitur yang dapat membuat anak merasa nyaman dan aman
+                    Bencatala <i>Playmat</i> juga dilengkapi segudang fitur yang dapat membuat anak merasa nyaman dan aman
                     serta dapat menunjang kreativitasnya.
                 </p>
             </div>
@@ -142,7 +142,7 @@
                 <div class="testimonial-item bg-light rounded p-3">
                     <div class="bg-white border rounded p-4 nengah">
                         <p>
-                            Augmented Reality (AR) merupakan teknologi yang memungkinkan
+                            <i>Augmented Reality</i> (AR) merupakan teknologi yang memungkinkan
                             untuk berinteraksi dengan objek imajinasi melalui perangkat elektronik dan seolah-olah
                             merasakan secara langsung (3D).
                         </p>
@@ -150,7 +150,7 @@
                             <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('landpage/img/ar.png') }}"
                                 style="width: 45px; height: 45px;">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">Augmented Reality</h6>
+                                <h6 class="fw-bold mb-1"><i>Augmented Reality</i></h6>
                                 <small>Fitur</small>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="testimonial-item bg-light rounded p-3">
                     <div class="bg-white border rounded p-4 nengah">
-                        <p>Anak-anak pada umumnya menyukai sesuatu yang sangat menarik. Bencatala playmat
+                        <p>Anak-anak pada umumnya menyukai sesuatu yang sangat menarik. Bencatala <i>playmat</i>
                             memberikan Video edukasi berisikan
                             tentang cara mitigasi bencana diiringi dengan animasi.
                         </p>
@@ -191,8 +191,8 @@
                 <div class="testimonial-item bg-light rounded p-3">
                     <div class="bg-white border rounded p-4 nengah">
                         <p>
-                            Sebagai permulaan ketika ingin mememasuki dunia Augmented Reality (AR), pengguna diminta untuk
-                            men-scan barcode yang telah tersedia dibuku panduan ataupun di web Bencatala Playmat.
+                            Sebagai permulaan ketika ingin mememasuki dunia <i>Augmented Reality</i> (AR), pengguna diminta untuk
+                            men-scan barcode yang telah tersedia dibuku panduan ataupun di web Bencatala <i>Playmat</i>.
                         </p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="{{ asset('landpage/img/scanqr.png') }}"
@@ -260,7 +260,7 @@
             <div class="col-md-6">
                 <div class="wow fadeInUp" data-wow-delay="0.5s">
                     <p class="mb-4 nengah">
-                        Bencatala Playmat dapat menjadi solusi mengenali bencana dan cara mitigasi yang tepat untuk anak
+                        Bencatala <i>Playmat</i> dapat menjadi solusi mengenali bencana dan cara mitigasi yang tepat untuk anak
                         usia dini.
                         Wujudkan kreativitas dan kecerdasan anak dalam pengetahuan berbasis teknologi.
                         <a href="#">Pesan sekarang.</a>

@@ -18,7 +18,7 @@
                 </nav>
             </div>
             <div class="col-md-6 animated fadeIn">
-                <img class="img-fluid" src="{{ asset('landpage/img/header.jpg') }}" alt="">
+                <img class="img-fluid" src="{{ asset('landpage/img/3-3.png') }}" alt="">
             </div>
         </div>
     </div>
