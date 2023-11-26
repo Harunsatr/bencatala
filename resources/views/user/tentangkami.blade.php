@@ -50,7 +50,7 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
                     <a href="{{ route('tentangkami') }}" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
-                            class="fa fa-chevron-right nengah"></i>
+                            class="fa fa-chearon-right nengah"></i>
                     </a>
                 </div>
             </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="row g-4 above">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gempa Bumi.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -79,7 +79,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Kekeringan.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -88,7 +88,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gunung Meletus.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -97,7 +97,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tsunami.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -106,7 +106,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Banjir.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -115,7 +115,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tanah Longsor.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">

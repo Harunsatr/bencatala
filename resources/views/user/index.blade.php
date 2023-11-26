@@ -9,7 +9,7 @@
                 <p class="animated fadeIn mb-2 pb-2 nengah">Bencatala <i> Playmat </i> menggunakan teknologi
                     dan design yang sangat menarik bagi semua kalangan umur, khususnya anak-anak.
                     Produk ini hadir sebagai langkah dini mitigasi bencana yang sering terjadi di Indonesia.</p>
-                <a href="{{ route('vr') }}" class="btn btn-primary py-2 px-4 me-4 animated fadeIn">Main</a>
+                <a href="{{ route('ar') }}" class="btn btn-primary py-2 px-4 me-4 animated fadeIn">Main</a>
             </div>
             <div class="col-md-6">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -95,7 +95,7 @@
             </div>
             <div class="row g-4 above">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gempa Bumi.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -104,7 +104,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Kekeringan.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -113,7 +113,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gunung Meletus.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -122,7 +122,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tsunami.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -131,7 +131,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Banjir.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -140,7 +140,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('vr') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tanah Longsor.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">

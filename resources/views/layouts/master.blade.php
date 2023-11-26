@@ -68,6 +68,7 @@
                     <div class="navbar-nav ms-auto">
                         <a href="{{ route('home') }}" class="nav-item nav-link" id="beranda">Beranda</a>
                         <a href="{{ route('tentangkami') }}" class="nav-item nav-link" id="tentangkami">Tentang Kami</a>
+                        <a href="{{ route('download') }}" class="nav-item nav-link" id="download">Unduhan</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                                 id="produkMenu">Produk</a>
@@ -78,7 +79,7 @@
                                     id="belanjasekarang">Belanja sekarang</a>
                             </div>
                         </div>
-                        <a href="{{ route('vr') }}" class="nav-item nav-link" id="virtualreality"><i>Augmented
+                        <a href="{{ route('ar') }}" class="nav-item nav-link" id="virtualreality"><i>Augmented
                             Reality</i></a>
                     </div>
                 </div>
@@ -116,9 +117,9 @@
 
         <!-- The social media icon bar -->
         <div class="icon-bar">
-            <a href="#" class="twitter"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" class="google"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/62895341020714" class="twitter"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/bencatala.official/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" class="google"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@bencatala.official?is_from_webapp=1&sender_device=pc" class="linkedin"><i class="fa-brands fa-tiktok"></i></a>
         </div>
 
 
@@ -178,12 +179,14 @@
                     $('#beranda').addClass('active');
                 } else if (path === '/tentangkami') {
                     $('#tentangkami').addClass('active');
+                } else if (path === '/download') {
+                    $('#download').addClass('active');
                 } else if (path === '/infoproduk' || path === '/belanjasekarang') {
                     // Set menu "Produk" menjadi aktif jika submenu "Info produk" atau "Belanja sekarang" dipilih
                     $('#produkMenu').addClass('active');
                 } else if (path === '/hubungi') {
                     $('#hubungi').addClass('active');
-                } else if (path === '/vr') {
+                } else if (path === '/ar') {
                     $('#virtualreality').addClass('active');
                 }
                 // Tambahkan kode ini untuk setiap menu lainnya
@@ -321,7 +324,7 @@
 .icon-bar a {
     display: block;
     text-align: center;
-    padding: 20px;
+    padding: 13px;
     transition: all 0.3s ease;
     color: white;
     font-size: 29px;

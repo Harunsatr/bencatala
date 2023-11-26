@@ -24,8 +24,9 @@ Route::get('/hubungi', [HomeController::class, 'hubungi'])->name('hubungi');
 Route::get('/infoproduk', [HomeController::class, 'infoproduk'])->name('infoproduk');
 Route::get('/produk', [HomeController::class, 'produk'])->name('produk');
 Route::get('/tentangkami', [HomeController::class, 'tentangkami'])->name('tentangkami');
+Route::get('/download', [HomeController::class, 'download'])->name('download');
 Route::get('/testi', [HomeController::class, 'testi'])->name('testi');
-Route::get('/vr', [HomeController::class, 'vr'])->name('vr');
+Route::get('/ar', [HomeController::class, 'ar'])->name('ar');
 Route::post('/send', [SendController::class, 'sendMessage'])->name('send.message');
 
 

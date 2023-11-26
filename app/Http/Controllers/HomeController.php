@@ -42,12 +42,16 @@ class HomeController extends Controller
     {
         return view('user.infoproduk');
     }
+    public function download()
+    {
+        return view('user.download');
+    }
     public function testi()
     {
         return view('user.testi');
     }
-    public function vr()
+    public function ar()
     {
-        return view('user.vr');
+        return view('user.ar');
     }
 }
