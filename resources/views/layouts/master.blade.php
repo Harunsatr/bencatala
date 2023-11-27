@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{ asset('landpage/img/bencatala_logo.png') }}" rel="icon">
+    <link src="{{ asset('landpage/img/bencatala_logo.png') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +56,7 @@
         <!-- Navbar Start -->
         <div class="container-fluid nav-bar bg-transparent">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center text-center">
                     <img class="img-fluid" src="{{ asset('landpage/img/bencatala_logo.png') }}" alt="Icon"
                         style="width: 80px; height: 80px;">
                 </a>
@@ -69,16 +69,7 @@
                         <a href="{{ route('home') }}" class="nav-item nav-link" id="beranda">Beranda</a>
                         <a href="{{ route('tentangkami') }}" class="nav-item nav-link" id="tentangkami">Tentang Kami</a>
                         <a href="{{ route('download') }}" class="nav-item nav-link" id="download">Unduhan</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                id="produkMenu">Produk</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{{ route('infoproduk') }}" class="dropdown-item" id="infoproduk">Info
-                                    produk</a>
-                                <a href="{{ route('belanjasekarang') }}" class="dropdown-item"
-                                    id="belanjasekarang">Belanja sekarang</a>
-                            </div>
-                        </div>
+                        <a href="{{ route('infoproduk') }}" class="nav-item nav-link" id="infoproduk">Produk</a>
                         <a href="{{ route('ar') }}" class="nav-item nav-link" id="virtualreality"><i>Augmented
                             Reality</i></a>
                     </div>
@@ -181,9 +172,8 @@
                     $('#tentangkami').addClass('active');
                 } else if (path === '/download') {
                     $('#download').addClass('active');
-                } else if (path === '/infoproduk' || path === '/belanjasekarang') {
-                    // Set menu "Produk" menjadi aktif jika submenu "Info produk" atau "Belanja sekarang" dipilih
-                    $('#produkMenu').addClass('active');
+                } else if (path === '/infoproduk') {
+                    $('#infoproduk').addClass('active');
                 } else if (path === '/hubungi') {
                     $('#hubungi').addClass('active');
                 } else if (path === '/ar') {

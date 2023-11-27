@@ -49,8 +49,6 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
-                    <a href="{{ route('tentangkami') }}" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
-                            class="fa fa-chearon-right nengah"></i>
                     </a>
                 </div>
             </div>

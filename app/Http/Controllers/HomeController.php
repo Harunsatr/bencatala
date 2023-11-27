@@ -54,4 +54,52 @@ class HomeController extends Controller
     {
         return view('user.ar');
     }
+
+    // Bencana
+    public function GempaBumi()
+    {
+        return view('user.GempaBumi');
+    }    public function Kekeringan()
+    {
+        return view('user.Kekeringan');
+    }    public function GunungMeletus()
+    {
+        return view('user.GunungMeletus');
+    }    public function Tsunami()
+    {
+        return view('user.Tsunami');
+    }    public function Banjir()
+    {
+        return view('user.Banjir');
+    }    public function TanahLongsor()
+    {
+        return view('user.TanahLongsor');
+    }
+
+    // View hasil blender
+    public function vGempa()
+    {
+        return view('user.vGempa');
+    }
+    public function vKekeringan()
+    {
+        return view('user.vKekeringan');
+    }
+    public function vGunung()
+    {
+        return view('user.vGunung');
+    }
+    public function vTsunami()
+    {
+        return view('user.vTsunami');
+    }
+    public function vBanjir()
+    {
+        return view('user.vBanjir');
+    }
+    public function vLongsor()
+    {
+        return view('user.vLongsor');
+    }
+
 }

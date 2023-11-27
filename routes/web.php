@@ -27,6 +27,22 @@ Route::get('/tentangkami', [HomeController::class, 'tentangkami'])->name('tentan
 Route::get('/download', [HomeController::class, 'download'])->name('download');
 Route::get('/testi', [HomeController::class, 'testi'])->name('testi');
 Route::get('/ar', [HomeController::class, 'ar'])->name('ar');
+// Route Bencana
+Route::get('/GempaBumi', [HomeController::class, 'GempaBumi'])->name('GempaBumi');
+Route::get('/Kekeringan', [HomeController::class, 'Kekeringan'])->name('Kekeringan');
+Route::get('/GunungMeletus', [HomeController::class, 'GunungMeletus'])->name('GunungMeletus');
+Route::get('/Tsunami', [HomeController::class, 'Tsunami'])->name('Tsunami');
+Route::get('/Banjir', [HomeController::class, 'Banjir'])->name('Banjir');
+Route::get('/TanahLongsor', [HomeController::class, 'TanahLongsor'])->name('TanahLongsor');
+
+// Route view blender
+Route::get('/vGempa', [HomeController::class, 'vGempa'])->name('vGempa');
+Route::get('/vKekeringan', [HomeController::class, 'vKekeringan'])->name('vKekeringan');
+Route::get('/vGunung', [HomeController::class, 'vGunung'])->name('vGunung');
+Route::get('/vTsunami', [HomeController::class, 'vTsunami'])->name('vTsunami');
+Route::get('/vBanjir', [HomeController::class, 'vBanjir'])->name('vBanjir');
+Route::get('/vLongsor', [HomeController::class, 'vLongsor'])->name('vLongsor');
+
 Route::post('/send', [SendController::class, 'sendMessage'])->name('send.message');
 
 

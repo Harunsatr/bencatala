@@ -95,7 +95,7 @@
             </div>
             <div class="row g-4 above">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('GempaBumi') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gempa Bumi.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -104,7 +104,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('Kekeringan') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Kekeringan.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -113,7 +113,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('GunungMeletus') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Gunung Meletus.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -122,7 +122,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('Tsunami') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tsunami.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -131,7 +131,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('Banjir') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Banjir.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -140,7 +140,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('ar') }}">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" href="{{ route('TanahLongsor') }}">
                         <div class="rounded p-4">
                             <img class="img-fluid" src="{{ asset('landpage/img/Tanah Longsor.png') }}" alt="Icon"
                                 style="max-width: 100px; height: auto;">
@@ -179,8 +179,6 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Buku panduan</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Konten menarik</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Aman bagi anak-anak</p>
-                    <a href="{{ route('tentangkami') }}" class="btn btn-primary py-2 px-3 me-2">Selengkapnya &nbsp;<i
-                            class="fa fa-chevron-right nengah"></i>
                     </a>
                 </div>
             </div>
@@ -771,7 +769,7 @@
                                     cara-cara merawat alam sekitar.
                                 </p>
                             </div>
-                            <a href="{{ route('tentangkami') }}" class="btn btn-primary py-2 px-3 me-2">Selengkapnya
+                            <a href="{{ route('download') }}" class="btn btn-primary py-2 px-3 me-2">Selengkapnya
                                 &nbsp;<i class="fa fa-chevron-right nengah"></i>
                             </a>
                         </div>
